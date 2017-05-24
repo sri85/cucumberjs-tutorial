@@ -1,0 +1,21 @@
+{
+  "name": "node-js-sample",
+  "version": "0.0.1",
+  "description": "Test framework using chakram",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "chakram": "^1.5.0",
+    "cucumber":"^1.0.0"
+  },
+  "engines": {
+    "node": "4.0.0"
+  },
+  "author": "Sripathi Pai",
+  "contributors": [
+    "Zeke Sikelianos <zeke@sikelianos.com> (http://zeke.sikelianos.com)"
+  ],
+  "license": "MIT"
+}
