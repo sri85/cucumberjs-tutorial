@@ -1,7 +1,7 @@
 'use strict';
 
-let calc = require('./calculator.js');
-let assert = require('chai').assert
+let calc = require('../model/calculator.js');
+let assert = require('chai').assert;
 
 
 
