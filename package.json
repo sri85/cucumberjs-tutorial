@@ -1,21 +1,23 @@
 {
-  "name": "node-js-sample",
+  "name": "cucumberjs-bootstrap-tutorial",
   "version": "0.0.1",
-  "description": "Test framework using chakram",
-  "main": "index.js",
+  "description": "Test framework using cucumber",
   "scripts": {
-    "test": "mocha"
+    "cucumber": "node_modules/.bin/cucumber-js",
+    "cucumber-parallel": "node_modules/cucumber-parallel/bin/cucumber-parallel features/ -r features/step_definitions/ --parallel scenarios -f json:file.json"
   },
   "dependencies": {
-    "chakram": "^1.5.0",
-    "cucumber":"^1.0.0"
+    "cucumber": "^1.0.0",
+    "chai": "^3.5.0",
+    "cucumber-parallel": "^0.1.12"
   },
   "engines": {
     "node": "4.0.0"
   },
   "author": "Sripathi Pai",
   "contributors": [
-    "Zeke Sikelianos <zeke@sikelianos.com> (http://zeke.sikelianos.com)"
+    "Sripathi Pai"
   ],
   "license": "MIT"
+
 }
