@@ -20,13 +20,4 @@ Scenario: Ability to divide two numbers
     When I perform "division" operation
     Then I should get 2 as result
 
-Scenario: Ability to divide two numbers
-    Given I have numbers 4 and 2
-    When I perform "division" operation
-    Then I should get 2 as result
 
-Scenario:Ability to use multiple operators
-   Given I have numbers 4 and 2
-   And I perform "multiply" operation
-   When I "add" 2 to the result
-   Then I should get 10 as result

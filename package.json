@@ -3,13 +3,15 @@
   "version": "0.0.1",
   "description": "Test framework using cucumber",
   "scripts": {
-    "cucumber": "node_modules/.bin/cucumber-js",
-    "cucumber-parallel": "node_modules/cucumber-parallel/bin/cucumber-parallel features/ -r features/step_definitions/ --parallel scenarios -f json:file.json"
+    "cucumber": "rm -rf reports/ && node_modules/.bin/cucumber-js",
+    "cucumber-parallel": "rm -rf reports/ && node_modules/cucumber-parallel/bin/cucumber-parallel features/ -r features/step_definitions/ --parallel scenarios -f json:reports/cucumber-report.json"
   },
   "dependencies": {
     "cucumber": "^1.0.0",
     "chai": "^3.5.0",
-    "cucumber-parallel": "^0.1.12"
+    "cucumber-parallel": "^0.1.12",
+    "mkdirp":"^0.5.1",
+    "cucumber-html-report":"^0.6.0"
   },
   "engines": {
     "node": "4.0.0"
