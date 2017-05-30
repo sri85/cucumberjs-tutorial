@@ -4,8 +4,8 @@ module.exports = function() {
     this.Before(function(features, callback) {
         if (!fs.existsSync('reports/')) {
             mkdirp('reports/', function (err) {
-                if (err) console.error("Errorfile"+err);
-                else console.log('pow!')
+                if (err) console.error("Error whille creating reports directory"+err);
+                else console.log("Report directory created succesfully!")
             });
         }
 
@@ -20,9 +20,9 @@ module.exports = function() {
             source:       'reports/cucumber-report.json',
             name:         'report.html',
         }).then(function () {
-            console.log("Success")
+            console.log("Report generated successfully")
         }).catch(function(err){
-            console.log(err)
+            console.log("Error while generating reports",err)
         });
         callback();
     });
